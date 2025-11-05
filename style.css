@@ -1,0 +1,75 @@
+/* Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #141423;
+  color: #f0f0f5;
+  line-height: 1.6;
+}
+
+/* Навигация */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(48, 48, 86, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.navbar a {
+  color: #e0e0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff99cc;
+}
+
+/* Секции */
+.section {
+  min-height: 100vh;
+  padding: 80px 2rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h1,
+.section h2 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+}
